@@ -43,7 +43,7 @@ class Test(unittest.TestCase):
     def test_stretch_times(self):
         robot = SortingRobot(self.small_list)
         robot.sort()
-        print(robot._time)
+        print("\n", robot._time)
         self.assertLess(robot._time, 110)
 
         robot = SortingRobot(self.medium_list)
